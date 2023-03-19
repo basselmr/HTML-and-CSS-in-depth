@@ -7,7 +7,7 @@
 <style>
     .box {
         border: 1px dashed blue;
-        /*width: 10vw;*/
+        width: 10vw;
         background-color: aquamarine;
         border-radius: 5px;
         margin: 2px;
@@ -21,38 +21,51 @@
         /*flex-wrap: nowrap;*/
         flex-wrap: wrap;
         /*flex-direction: column;*/
-        align-items: flex-end;
-        gap: 10px;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .box1 {
+        background-color: rgb(90, 90, 90);
+        align-self: center;
+        flex: 1 1 70px;
+    }
+
+    .box2 {
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        flex: 1 1 70%;
     }
 
     .box3 {
-        background-color: blanchedalmond;
+        background-color: rgb(72, 255, 0);
         align-self: center;
-    }
-
-    .box3 {
-        background-color: blanchedalmond;
-        align-self: center;
-        flex: 1 1 auto;
+        flex: 0 0 160px;
     }
 
 
     .box4 {
         background-color: blanchedalmond;
         align-self: center;
-        flex: 1 1 auto;
+        flex: 1 0 40px;
     }
 
     .box5 {
-        background-color: blanchedalmond;
+        background-color: rgb(126, 17, 17);
         align-self: center;
-        flex: 0 0 auto;
+        flex: 1 0 60px;
+    }
+
+    .box6 {
+        background-color: rgb(164, 151, 223);
+        align-self: center;
+        flex: 1 1 150px;
     }
 
     .box7 {
-        background-color: blanchedalmond;
+        background-color: rgb(236, 143, 2);
         align-self: center;
-        flex: 1 1 auto;
+        flex: 1 0 100px;
     }
 </style>
 
