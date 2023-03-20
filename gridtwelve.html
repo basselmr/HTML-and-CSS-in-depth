@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid Twelve</title>
+</head>
+<style>
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .segment {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        grid-template-rows: 100px;
+
+    }
+
+    .twelve {
+        background-color: lightseagreen;
+        grid-column: 1/span 12;
+    }
+
+    .eight {
+        background-color: bisque;
+        grid-column: 5/span 8;
+    }
+
+    .four {
+        background-color: lightblue;
+        grid-column: 1/span 4;
+    }
+
+    .six {
+        background-color: lightsteelblue;
+        grid-column: 5/span 6;
+    }
+
+    .seven {
+        background-color: lightcoral;
+        grid-column: 3/span 7;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="segment twelve">Span 12</div>
+        <div class="segment eight">Span 8</div>
+        <div class="segment four">Span 4</div>
+        <div class="segment six">Span 6</div>
+        <div class="segment seven">Span 7</div>
+        <div class="segment twelve">Span 12</div>
+    </div>
+    <a href="index.html">HOME</a>
+</body>
+
+</html>
