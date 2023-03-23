@@ -1,9 +1,92 @@
+@font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
 * {
     margin: 0;
 }
+body {
+      background-color: #EDEFEE;
+      font-family: 'Raleway', sans-serif;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      margin-left: 5%;
+      margin-right: 5%;
+}
+.b1 {
+      border: grey solid 2px;
+}
+.b2 {
+      border: 1px solid blue ;
+}
+.b3 {
+      border: 1px dashed green;
+}
+header > img {
+      display: block;
+      margin: auto;
+}
 nav ul {
-      list-style-type: none;
+      list-style: none;
+      text-align: center;
+      padding: 0.5em 2em 0.5em 2em;
 }
-nav ul li {
-      display: inline-block;
+nav li {
+      display: inline;
+      margin: 0.5em 2em 0.5em 2em;
+
 }
+nav li a {
+      text-decoration: none;
+      
+}
+/*.container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 200px 200px;
+      grid-template-areas: "pro pro pro" "img1 img2 img3" ;
+      
+}
+.promotion {
+      grid-area: pro;
+      border: 1px solid black;
+      background-color: blue;
+}
+.img1 {
+      grid-area: img1 ;
+      background-color: burlywood;
+      border: 1px solid black;
+
+}
+.img2 {
+      grid-area: img2 ;
+      background-color: burlywood;
+      border: 1px solid black;
+
+}
+.img3 {
+      grid-area: img3 ;
+      background-color: burlywood;
+      border: 1px solid black;
+
+}*/
+
+footer {
+      display: flex;
+}
+
+@media (max-width: 576px) {
+      nav ul {
+            padding: 0.5em 3em 0.5em 3em;
+      }
+      nav li {
+            display: block;
+            margin: 0.5em 2em 0.5em 2em;
+      
+      }
+     
+  }
