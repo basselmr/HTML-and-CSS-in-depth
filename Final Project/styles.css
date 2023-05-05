@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luxurious+Script&display=swap')
 @font-face {
       font-family: 'Raleway';
       font-style: normal;
@@ -48,6 +49,27 @@ nav li {
 nav li a {
       text-decoration: none;
 }
+.image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px; /* adds gap between columns */
+      padding: 3rem;
+    }
+    
+    .image-grid div {
+      text-align: center; /* centers the image and caption */
+    }
+    
+    .image-grid img {
+      max-width: 100%;
+      height: 100%;
+    }
+    
+    .image-grid p {
+      font-size: 1rem;
+      margin-top: 10px;
+      font-family: 'Great Vibes', cursive;
+    }
 /*.container {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -79,9 +101,7 @@ nav li a {
 
 }*/
 
-footer {
-      display: flex;
-}
+
 @media (max-width: 1024px) {
       nav ul {
             padding: 0.5em 4em 0.5em 4em;
@@ -99,5 +119,11 @@ footer {
       nav li {
             /*border:1px solid #ffffff;*/
             margin: 0.75em;
-      }    
+      } 
+      .image-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px; /* adds gap between columns */
+            padding: 3rem;
+          }   
   }
